@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Тестовое задание</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="page-header">
+        <img src="./images/header-logo.png" alt="" class="page-header__logo" />
+
+        <div class="header-profile">
+          <div class="header-profile__avatar">
+            <img
+              src="./images/icon-profile.svg"
+              alt=""
+              class="header-profile__image"
+            />
+          </div>
+          <span class="header-profile__name">Имя Фамилия</span>
+          <button class="header-profile__logout" type="button"></button>
+        </div>
+      </header>
+
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Сотрудники</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__text"
+              >Виктория Беляева, belyeva@companyname</span
+            >
+          </li>
+        </ul>
+      </div>
+
+      <main class="page-content">
+        <aside class="sidebar">
+          <div class="search">
+            <input
+              type="search"
+              class="search__field"
+              placeholder="Быстрый поиск..."
+            />
+          </div>
+
+          <ul class="employees">
+            <li class="employees__item">
+              <div class="employees__item-photo-wrapper">
+                <img
+                  src="./images/employee-photo1.jpg"
+                  alt=""
+                  class="employees__item-photo"
+                />
+              </div>
+              <div class="employees__item-content">
+                <span class="employees__item-name">Анна Иванова</span>
+                <span class="employees__item-position"
+                  >Менеджер, Отдел продаж</span
+                >
+                <span class="employees__item-status employees__item-status_red"
+                  >на увольнении</span
+                >
+              </div>
+              <div class="employees__item-count">12</div>
+            </li>
+
+            <li class="employees__item employees__item_active">
+              <div class="employees__item-photo-wrapper">
+                <img
+                  src="./images/employee-photo2.jpg"
+                  alt=""
+                  class="employees__item-photo"
+                />
+              </div>
+              <div class="employees__item-content">
+                <span class="employees__item-name">Виктория Беляева</span>
+                <span class="employees__item-position"
+                  >Менеджер, Отдел продаж</span
+                >
+                <div
+                  class="employees__item-status employees__item-status_green"
+                >
+                  в отпуске
+                </div>
+              </div>
+              <div class="employees__item-count">247</div>
+            </li>
+
+            <li class="employees__item">
+              <div class="employees__item-photo-wrapper">
+                <img
+                  src="./images/employee-photo3.jpg"
+                  alt=""
+                  class="employees__item-photo"
+                />
+              </div>
+              <div class="employees__item-content">
+                <span class="employees__item-name">Анна Иванова</span>
+                <span class="employees__item-position"
+                  >Менеджер, отдел продаж</span
+                >
+              </div>
+              <div class="employees__item-count">0</div>
+            </li>
+          </ul>
+        </aside>
+
+        <section class="detail">
+          <div class="detail-profile">
+            <div class="employee-main">
+              <div class="employee-main__photo-wrapper">
+                <img
+                  src="./images/employee-photo2.jpg"
+                  alt=""
+                  class="employee-main__photo"
+                />
+                <div class="employee-main__smile">
+                  <img src="./images/icon-smile.svg" alt="" />
+                </div>
+              </div>
+              <div class="employee-main__content">
+                <span class="employee-main__name"> Виктория Беляева</span>
+                <span class="employee-main__position"
+                  >Менеджер, отдел продаж</span
+                >
+              </div>
+            </div>
+
+            <div class="user-info">
+              <div class="user-info__top">
+                <p class="last-activity">
+                  Последняя активность
+                  <span class="last-activity__span">сегодня в 12:22</span>
+                </p>
+
+                <a href="#" class="user-info__link">к списку сотрудников</a>
+              </div>
+
+              <ul class="user-info__list">
+                <li class="user-info__item">
+                  <div class="user-info__item-label">Уровень риска</div>
+                  <div class="user-info__item-value">
+                    157
+                    <span
+                      class="user-info__item-persent user-info__item-persent_down"
+                      >-100%</span
+                    >
+                  </div>
+                </li>
+
+                <li class="user-info__item">
+                  <div class="user-info__item-label">Продуктивность</div>
+                  <div class="user-info__item-value">
+                    86%
+                    <span
+                      class="user-info__item-persent user-info__item-persent_up"
+                      >+3%</span
+                    >
+                  </div>
+                </li>
+
+                <li class="user-info__item">
+                  <div class="user-info__item-label">Индекс активности</div>
+                  <div class="user-info__item-value">
+                    2.4%
+                    <span
+                      class="user-info__item-persent user-info__item-persent_up"
+                      >+14%</span
+                    >
+                  </div>
+                </li>
+
+                <li class="user-info__item">
+                  <button
+                    type="button"
+                    class="user-info__item-btn check-btn"
+                  ></button>
+                  <button
+                    type="button"
+                    class="user-info__item-btn camera-btn"
+                  ></button>
+                  <button
+                    type="button"
+                    class="user-info__item-btn tv-btn"
+                  ></button>
+                  <button
+                    type="button"
+                    class="user-info__item-btn menu-btn"
+                  ></button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="anomalies">
+            <h2 class="detail__title anomalies__title">Аномалии</h2>
+
+            <ul class="anomalies__list">
+              <li class="anomalies__item">
+                <span>
+                  Использование более одного аккаунта в соцсетях или
+                  мессенджерах
+                </span>
+              </li>
+              <li class="anomalies__item">
+                <span>Первое использование устройства</span>
+              </li>
+              <li class="anomalies__item">
+                <span>Отсутствие более 40 дней</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="basic-indicators">
+            <h2 class="detail__title basic-indicators__title">
+              Основные показатели
+            </h2>
+
+            <div class="basic-indicators__chart">
+              <span class="basic-indicators__chart-message"
+                >Данные не найдены</span
+              >
+            </div>
+          </div>
+
+          <div class="detail-bottom">
+            <div class="apps-and-categories">
+              <h2 class="detail__title apps-and-categories__title">
+                Приложения и категории
+              </h2>
+
+              <div class="apps-and-categories__list">
+                <div class="apps-and-categories__item">
+                  <div class="apps-and-categories__item-col">
+                    Категории приложений
+                  </div>
+                  <div class="apps-and-categories__item-col">время</div>
+                  <div class="apps-and-categories__item-col">%</div>
+                  <div class="apps-and-categories__item-col">рост</div>
+                </div>
+                <div class="apps-and-categories__item">
+                  <div class="apps-and-categories__item-col">
+                    <div class="apps-and-categories__item-name-wrapper">
+                      <div
+                        class="apps-and-categories__item-box"
+                        style="background-color: #f8d77f"
+                      ></div>
+                      <span class="apps-and-categories__item-name"
+                        >Мессенджеры</span
+                      >
+                    </div>
+                  </div>
+                  <div class="apps-and-categories__item-col">
+                    <span class="apps-and-categories__item-time">20:55</span>
+                  </div>
+                  <div class="apps-and-categories__item-col">18</div>
+                  <div class="apps-and-categories__item-col">+2%</div>
+                </div>
+                <div class="apps-and-categories__item">
+                  <div class="apps-and-categories__item-col">
+                    <div class="apps-and-categories__item-name-wrapper">
+                      <div
+                        class="apps-and-categories__item-box"
+                        style="background-color: #f8d77f"
+                      ></div>
+                      <span class="apps-and-categories__item-name"
+                        >Браузеры</span
+                      >
+                    </div>
+                  </div>
+                  <div class="apps-and-categories__item-col">
+                    <span class="apps-and-categories__item-time">15:11</span>
+                  </div>
+                  <div class="apps-and-categories__item-col">12</div>
+                  <div class="apps-and-categories__item-col">-3%</div>
+                </div>
+                <div class="apps-and-categories__item">
+                  <div class="apps-and-categories__item-col">
+                    <div class="apps-and-categories__item-name-wrapper">
+                      <div
+                        class="apps-and-categories__item-box"
+                        style="background-color: #f689a8"
+                      ></div>
+                      <span class="apps-and-categories__item-name">Игры</span>
+                    </div>
+                  </div>
+                  <div class="apps-and-categories__item-col">
+                    <span class="apps-and-categories__item-time">13:11</span>
+                  </div>
+                  <div class="apps-and-categories__item-col">7</div>
+                  <div class="apps-and-categories__item-col">0</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sites-and-categories">
+              <h2 class="detail__title sites-and-categories__title">
+                Сайты и категории
+              </h2>
+
+              <div class="sites-and-categories__list">
+                <div class="sites-and-categories__item">
+                  <div class="sites-and-categories__item-col">
+                    Категории сайтов
+                  </div>
+                  <div class="sites-and-categories__item-col">время</div>
+                  <div class="sites-and-categories__item-col">%</div>
+                  <div class="sites-and-categories__item-col">рост</div>
+                </div>
+                <div class="sites-and-categories__item">
+                  <div class="sites-and-categories__item-col">
+                    <div class="sites-and-categories__item-name-wrapper">
+                      <div
+                        class="sites-and-categories__item-box"
+                        style="background-color: #f8d77f"
+                      ></div>
+                      <span class="sites-and-categories__item-name"
+                        >Поисковики</span
+                      >
+                    </div>
+                  </div>
+                  <div class="sites-and-categories__item-col">
+                    <span class="sites-and-categories__item-time">20:55</span>
+                  </div>
+                  <div class="sites-and-categories__item-col">18</div>
+                  <div class="sites-and-categories__item-col">+2%</div>
+                </div>
+                <div class="sites-and-categories__item">
+                  <div class="sites-and-categories__item-col">
+                    <div class="sites-and-categories__item-name-wrapper">
+                      <div
+                        class="sites-and-categories__item-box"
+                        style="background-color: #a6c8b3"
+                      ></div>
+                      <span class="sites-and-categories__item-name"
+                        >Новостные порталы</span
+                      >
+                    </div>
+                  </div>
+                  <div class="sites-and-categories__item-col">
+                    <span class="sites-and-categories__item-time">15:11</span>
+                  </div>
+                  <div class="sites-and-categories__item-col">12</div>
+                  <div class="sites-and-categories__item-col">-3%</div>
+                </div>
+                <div class="sites-and-categories__item">
+                  <div class="sites-and-categories__item-col">
+                    <div class="sites-and-categories__item-name-wrapper">
+                      <div
+                        class="sites-and-categories__item-box"
+                        style="background-color: #a6c8b3"
+                      ></div>
+                      <span
+                        class="sites-and-categories__item-name"
+                        title="Сайты с неопределеным названием"
+                        >Сайты с неопределеным названием</span
+                      >
+                    </div>
+                  </div>
+                  <div class="sites-and-categories__item-col">
+                    <span class="sites-and-categories__item-time">13:11</span>
+                  </div>
+                  <div class="sites-and-categories__item-col">7</div>
+                  <div class="sites-and-categories__item-col">0</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="discipline">
+              <h2 class="detail__title discipline__title">Дисциплина</h2>
+
+              <div class="discipline__list">
+                <div class="discipline__item">
+                  <div class="discipline__item-col">Дата</div>
+                  <div class="discipline__item-col">
+                    Приход<br />
+                    на работу
+                  </div>
+                  <div class="discipline__item-col">
+                    Уход<br />
+                    с работы
+                  </div>
+                  <div class="discipline__item-col">
+                    Время<br />
+                    на работе
+                  </div>
+                </div>
+
+                <div class="discipline__item">
+                  <div class="discipline__item-col">
+                    <span class="discipline__item-name">29.02</span>
+                  </div>
+                  <div class="discipline__item-col">
+                    08:46
+                    <span
+                      class="discipline__item-minutes discipline__item-minutes-green"
+                      >+16 мин</span
+                    >
+                  </div>
+                  <div class="discipline__item-col">
+                    08:46
+                    <span
+                      class="discipline__item-minutes discipline__item-minutes-green"
+                      >+16 мин</span
+                    >
+                  </div>
+                  <div class="discipline__item-col">
+                    09:06
+                    <span
+                      class="discipline__item-minutes discipline__item-minutes-green"
+                      >+6 мин</span
+                    >
+                  </div>
+                </div>
+
+                <div class="discipline__item">
+                  <div class="discipline__item-col">
+                    <span class="discipline__item-name">28.02</span>
+                  </div>
+                  <div class="discipline__item-col">
+                    08:27
+                    <span
+                      class="discipline__item-minutes discipline__item-minutes-red"
+                      >-3 мин</span
+                    >
+                  </div>
+                  <div class="discipline__item-col">
+                    08:27
+                    <span
+                      class="discipline__item-minutes discipline__item-minutes-red"
+                      >-3 мин</span
+                    >
+                  </div>
+                  <div class="discipline__item-col">
+                    08:36
+                    <span
+                      class="discipline__item-minutes discipline__item-minutes-red"
+                      >-24 мин</span
+                    >
+                  </div>
+                </div>
+
+                <div class="discipline__item">
+                  <div class="discipline__item-col">
+                    <span class="discipline__item-name">25.02</span>
+                  </div>
+                  <div class="discipline__item-col">
+                    08:42
+                    <span
+                      class="discipline__item-minutes discipline__item-minutes-green"
+                      >+12 мин</span
+                    >
+                  </div>
+                  <div class="discipline__item-col">
+                    08:42
+                    <span
+                      class="discipline__item-minutes discipline__item-minutes-green"
+                      >+12 мин</span
+                    >
+                  </div>
+                  <div class="discipline__item-col">
+                    08:36
+                    <span
+                      class="discipline__item-minutes discipline__item-minutes-red"
+                      >-24 мин</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

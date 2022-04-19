@@ -1,0 +1,165 @@
+@media (max-width: 1440px) {
+  .detail-bottom {
+    justify-content: flex-start;
+  }
+
+  .apps-and-categories {
+    margin-bottom: 30px;
+    margin-right: 60px;
+  }
+
+  .apps-and-categories__title,
+  .sites-and-categories__title,
+  .discipline__title {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .detail-profile {
+    flex-direction: column;
+  }
+
+  .employee-main {
+    margin-bottom: 20px;
+  }
+
+  .sites-and-categories {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 950px) {
+  .page-content {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .detail {
+    width: 100%;
+  }
+
+  .detail-profile {
+    display: block;
+    padding-bottom: 20px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .employee-main {
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .employee-main__name {
+    font-size: 17px;
+    margin-bottom: 6px;
+  }
+
+  .employee-main__position {
+    font-size: 12px;
+  }
+
+  .user-info__top {
+    font-size: 12px;
+  }
+
+  .user-info__item {
+    border-right: none;
+  }
+
+  .user-info__item:first-child,
+  .user-info__item:nth-child(2),
+  .user-info__item:nth-child(3),
+  .user-info__item:last-child {
+    padding: 0;
+  }
+
+  .user-info__item-label {
+    font-size: 13px;
+    margin-bottom: 11px;
+  }
+
+  .user-info__item-value {
+    font-size: 19px;
+  }
+
+  .user-info__item-persent {
+    font-size: 11px;
+  }
+
+  .anomalies {
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+
+  .basic-indicators {
+    padding-left: 20px;
+  }
+
+  .basic-indicators__title {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .anomalies {
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .anomalies__list {
+    grid-template-columns: 1fr;
+    grid-row-gap: 12px;
+  }
+
+  .basic-indicators {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header__logo {
+    width: 180px;
+  }
+
+  .breadcrumbs__item {
+    font-size: 10px;
+  }
+
+  .user-info__top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-info__link {
+    padding-left: 20px;
+    order: -1;
+    margin-bottom: 15px;
+  }
+
+  .user-info__link::before {
+    left: 0;
+  }
+
+  .user-info__list {
+    display: block;
+  }
+
+  .user-info__item-label {
+    margin-bottom: 7px;
+  }
+
+  .user-info__item {
+    margin-bottom: 20px;
+  }
+
+  .user-info__item:last-child {
+    margin-bottom: 0;
+  }
+}
